@@ -8,12 +8,16 @@
 </head>
 <body>
     <h1>Titolo</h1>
-    <?php 
 
-    foreach($movies as $movie){
-        echo "ciao";
-    }
-
-    ?>
+    @foreach($movies as $movie)
+        <div>
+            <p>{{$movie->title}}</p>
+            <p>{{$movie->nationality}}</p>
+            <p>{{$movie->date}}</p>
+            <p>{{$movie->vote}}</p>
+            <br>
+        </div>
+    @endforeach
+    
 </body>
 </html>
